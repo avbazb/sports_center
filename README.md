@@ -68,13 +68,7 @@
 4. 设置目录权限（assets/uploads/需要写入权限）
 
 
-## 贡献指南
-
-1. Fork 本仓库
-2. 创建你的特性分支 (`git checkout -b feature/amazing-feature`)
-3. 提交你的更改 (`git commit -m 'Add some amazing feature'`)
-4. 推送到分支 (`git push origin feature/amazing-feature`)
-5. 打开一个 Pull Request
+部分上传图片功能可能存在bug
 
 ## 开源许可
 
