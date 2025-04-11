@@ -1,0 +1,193 @@
+/**
+ * 响应式样式文件
+ */
+
+/* 平板电脑 */
+@media (max-width: 992px) {
+    .top-nav-inner {
+        height: 60px;
+    }
+    
+    .logo img {
+        height: 35px;
+    }
+    
+    .site-title {
+        font-size: 16px;
+    }
+    
+    .main-menu {
+        gap: 20px;
+    }
+    
+    .page-banner {
+        padding: 60px 0;
+    }
+    
+    .page-title {
+        font-size: 36px;
+    }
+    
+    .section {
+        padding: 40px 0;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .article-header .article-title {
+        font-size: 30px;
+    }
+}
+
+/* 大型手机 */
+@media (max-width: 768px) {
+    .top-nav-inner {
+        height: 50px;
+    }
+    
+    .mobile-nav-toggle {
+        display: flex;
+    }
+    
+    .main-nav-container {
+        position: relative;
+    }
+    
+    .main-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        background-color: var(--white);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: var(--transition);
+        z-index: 100;
+    }
+    
+    .main-nav.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    
+    .main-menu {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+    }
+    
+    .main-menu li {
+        width: 100%;
+    }
+    
+    .main-menu li a {
+        display: block;
+        padding: 12px 15px;
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .main-menu li a::after {
+        display: none;
+    }
+    
+    .logo-container {
+        flex: 1;
+    }
+    
+    .site-title {
+        font-size: 14px;
+    }
+    
+    .page-banner {
+        padding: 40px 0;
+    }
+    
+    .page-title {
+        font-size: 28px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .footer-widgets {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .article-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .article-header .article-title {
+        font-size: 24px;
+    }
+    
+    .article-details,
+    .comments-section {
+        padding: 20px;
+    }
+    
+    .article-content h2 {
+        font-size: 22px;
+    }
+    
+    .article-content h3 {
+        font-size: 20px;
+    }
+    
+    .comment-item {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+/* 小型手机 */
+@media (max-width: 480px) {
+    .logo img {
+        height: 30px;
+        margin-right: 10px;
+    }
+    
+    .site-title {
+        font-size: 13px;
+    }
+    
+    .auth-buttons {
+        gap: 5px;
+    }
+    
+    .btn {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+    
+    .page-title {
+        font-size: 24px;
+    }
+    
+    .breadcrumb {
+        font-size: 13px;
+    }
+    
+    .article-meta {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .comment-author {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .form-card {
+        padding: 20px;
+    }
+} 
